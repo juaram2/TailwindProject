@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "react": "16.11.0",
-    "react-native": "0.62.2"
+    "react-native": "0.62.2",
+    "react-native-tailwindcss": "^1.1.9",
+    "styled-components": "^5.1.1",
+    "tailwind-rn": "^1.1.1",
+    "watchman": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
