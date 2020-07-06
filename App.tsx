@@ -23,13 +23,13 @@ import {
 } from 'react-native';
 
 import tailwind from 'tailwind-rn';
-// import styled from 'styled-components/native';
-// import {t} from 'react-native-tailwindcss';
+import styled from 'styled-components/native';
+import {t} from 'react-native-tailwindcss';
 
 const App = () => {
-  // const Card = styled.View`
-  //   ${[t.mB4, t.bgGray200, t.rounded, t.p3]}
-  // `;
+  const Card = styled.View`
+    ${[t.mB4, t.bgGray200, t.rounded, t.p3]}
+  `;
 
   return (
     <>
@@ -44,6 +44,12 @@ const App = () => {
               style={tailwind('text-base')}
             />
           </View>
+
+          <Card>
+            <Text style={tailwind('px-6 pt-2 text-lg font-semibold')}>
+              Dental Clinic
+            </Text>
+          </Card>
 
           <View style={styles.card}>
             <View style={styles.image}>
