@@ -11,7 +11,6 @@
 import React from 'react';
 import {
   SafeAreaView,
-  StyleSheet,
   ScrollView,
   View,
   Text,
@@ -28,7 +27,23 @@ import {t} from 'react-native-tailwindcss';
 
 const App = () => {
   const Card = styled.View`
-    ${[t.mB4, t.bgGray200, t.rounded, t.p3]}
+    ${[t.mB4, t.bgWhite, t.shadowLg, t.roundedLg]}
+  `;
+  const ImageView = styled.View`
+    ${[t.roundedTlLg, t.roundedTrLg, t.overflowHidden]}
+  `;
+  const ButtonView = styled.View`
+    ${[
+      t.h10,
+      t.flex,
+      t.flexRow,
+      t.justifyAround,
+      t.alignCenter,
+      t.bgGray200,
+      t.roundedBlLg,
+      t.roundedBrLg,
+      t.overflowHidden,
+    ]}
   `;
 
   return (
@@ -46,13 +61,7 @@ const App = () => {
           </View>
 
           <Card>
-            <Text style={tailwind('px-6 pt-2 text-lg font-semibold')}>
-              Dental Clinic
-            </Text>
-          </Card>
-
-          <View style={styles.card}>
-            <View style={styles.image}>
+            <ImageView>
               <Image
                 style={tailwind('w-full h-40')}
                 source={{
@@ -60,7 +69,7 @@ const App = () => {
                     'https://chblobdev.icloudhospital.com/thumbnailcontainer/0b59a18f-db28-4754-89b4-af7bca99ab81-2988ffd6-d89b-4eb1-88da-eb42ce06188e.jpg'
                 }}
               />
-            </View>
+            </ImageView>
             <Text style={tailwind('px-6 pt-2 text-lg font-semibold')}>
               Dental Clinic
             </Text>
@@ -83,7 +92,7 @@ const App = () => {
               <Text style={tailwind('text-sm text-red-700')}>~ $30</Text>
             </View>
 
-            <View style={styles.buttonWrap}>
+            <ButtonView>
               <Button
                 onPress={() => Alert.alert('Left button pressed')}
                 title="info"
@@ -93,40 +102,12 @@ const App = () => {
                 onPress={() => Alert.alert('Left button pressed')}
                 title="Online Booking"
               />
-            </View>
-          </View>
+            </ButtonView>
+          </Card>
         </ScrollView>
       </SafeAreaView>
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  card: {
-    marginBottom: 16,
-    shadowOffset: {
-      width: 0,
-      height: 10,
-    },
-    shadowOpacity: 0.2,
-    shadowColor: 'rgb(59,67,92)',
-    shadowRadius: 10,
-    backgroundColor: '#fff',
-    borderRadius: 18,
-  },
-  image: {
-    borderTopLeftRadius: 18,
-    borderTopRightRadius: 18,
-    overflow: 'hidden',
-  },
-  buttonWrap: {
-    height: 44,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    backgroundColor: '#edf1f6',
-  },
-});
 
 export default App;
