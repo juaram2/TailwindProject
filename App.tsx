@@ -32,9 +32,9 @@ const App = () => {
       t.bgGray200,
       t.roundedBlLg,
       t.roundedBrLg,
-      t.overflowHidden,
+      t.overflowHidden
     ]}
-  `;
+  `
 
   return (
     <>

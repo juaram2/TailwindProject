@@ -15,7 +15,7 @@ module.exports = {
         600: '#718096',
         700: '#4a5568',
         800: '#2d3748',
-        900: '#1a202c',
+        900: '#1a202c'
       },
       red: {
         100: '#fff5f5',
@@ -26,7 +26,7 @@ module.exports = {
         600: '#e53e3e',
         700: '#c53030',
         800: '#9b2c2c',
-        900: '#742a2a',
+        900: '#742a2a'
       },
       orange: {
         100: '#fffaf0',
@@ -37,7 +37,7 @@ module.exports = {
         600: '#dd6b20',
         700: '#c05621',
         800: '#9c4221',
-        900: '#7b341e',
+        900: '#7b341e'
       },
       yellow: {
         100: '#fffff0',
@@ -48,7 +48,7 @@ module.exports = {
         600: '#d69e2e',
         700: '#b7791f',
         800: '#975a16',
-        900: '#744210',
+        900: '#744210'
       },
       green: {
         100: '#f0fff4',
@@ -59,7 +59,7 @@ module.exports = {
         600: '#38a169',
         700: '#2f855a',
         800: '#276749',
-        900: '#22543d',
+        900: '#22543d'
       },
       teal: {
         100: '#e6fffa',
@@ -70,7 +70,7 @@ module.exports = {
         600: '#319795',
         700: '#2c7a7b',
         800: '#285e61',
-        900: '#234e52',
+        900: '#234e52'
       },
       blue: {
         100: '#ebf8ff',
@@ -81,7 +81,7 @@ module.exports = {
         600: '#3182ce',
         700: '#2b6cb0',
         800: '#2c5282',
-        900: '#2a4365',
+        900: '#2a4365'
       },
       indigo: {
         100: '#ebf4ff',
@@ -92,7 +92,7 @@ module.exports = {
         600: '#5a67d8',
         700: '#4c51bf',
         800: '#434190',
-        900: '#3c366b',
+        900: '#3c366b'
       },
       purple: {
         100: '#faf5ff',
@@ -103,7 +103,7 @@ module.exports = {
         600: '#805ad5',
         700: '#6b46c1',
         800: '#553c9a',
-        900: '#44337a',
+        900: '#44337a'
       },
       pink: {
         100: '#fff5f7',
@@ -114,8 +114,8 @@ module.exports = {
         600: '#d53f8c',
         700: '#b83280',
         800: '#97266d',
-        900: '#702459',
-      },
+        900: '#702459'
+      }
     },
     spacing: {
       px: '1px',
@@ -247,19 +247,19 @@ module.exports = {
       '125': '31.25rem',
       '126': '31.5rem',
       '127': '31.75rem',
-      '128': '32rem',
+      '128': '32rem'
     },
     backgroundColor: (theme) => theme('colors'),
     borderColor: (theme) => ({
       ...theme('colors'),
-      default: theme('colors.gray.300', 'currentColor'),
+      default: theme('colors.gray.300', 'currentColor')
     }),
     borderRadius: {
       none: '0',
       sm: '0.125rem',
       default: '0.25rem',
       lg: '18px',
-      full: '9999px',
+      full: '9999px'
     },
     borderWidth: {
       default: '1px',
@@ -273,6 +273,16 @@ module.exports = {
       '8': '8px',
       '9': '9px',
       '10': '10px',
+      '11': '11px'
+    },
+    shadow: {
+      default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 1.5',
+      md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 3',
+      lg: '0 10px 15px rgba(0, 0, 0, 0.1), 7.5',
+      xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 12.5',
+      '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25), 25',
+      outline: '0 0 0 3px rgba(66, 153, 225, 0.5), 1.5',
+      none: 'none'
     },
     boxShadow: {
       default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 1.5',
@@ -281,27 +291,27 @@ module.exports = {
       xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 12.5',
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25), 25',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5), 1.5',
-      none: 'none',
+      none: 'none'
     },
 
     flex: {
       '0': '0',
       '1': '1',
       initial: '0',
-      none: 'none',
+      none: 'none'
     },
     flexGrow: {
       '0': '0',
-      default: '1',
+      default: '1'
     },
     flexShrink: {
       '0': '0',
-      default: '1',
+      default: '1'
     },
     fontFamily: {
       sans: 'Arial',
       serif: 'Georgia',
-      mono: 'Courier New',
+      mono: 'Courier New'
     },
     fontSize: {
       xs: '0.75rem',
@@ -313,7 +323,7 @@ module.exports = {
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
-      '6xl': '4rem',
+      '6xl': '4rem'
     },
     fontWeight: {
       hairline: '100',
@@ -324,7 +334,7 @@ module.exports = {
       semibold: '600',
       bold: '700',
       extrabold: '800',
-      black: '900',
+      black: '900'
     },
     height: (theme) => ({
       auto: 'auto',
@@ -356,11 +366,11 @@ module.exports = {
       '10/12': '83.333333%',
       '11/12': '91.666667%',
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     }),
     inset: {
       '0': '0',
-      auto: 'auto',
+      auto: 'auto'
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -368,7 +378,7 @@ module.exports = {
       normal: '0',
       wide: '0.025em',
       wider: '0.05em',
-      widest: '0.1em',
+      widest: '0.1em'
     },
     lineHeight: {
       none: '1rem',
@@ -376,12 +386,12 @@ module.exports = {
       snug: '1.375rem',
       normal: '1.5rem',
       relaxed: '1.625rem',
-      loose: '2rem',
+      loose: '2rem'
     },
-    margin: (theme, {negative}) => ({
+    margin: (theme, { negative }) => ({
       auto: 'auto',
       ...theme('spacing'),
-      ...negative(theme('spacing')),
+      ...negative(theme('spacing'))
     }),
     maxHeight: (theme) => ({
       '0': '0',
@@ -413,7 +423,7 @@ module.exports = {
       '10/12': '83.333333%',
       '11/12': '91.666667%',
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     }),
     maxWidth: (theme) => ({
       '0': '0',
@@ -444,7 +454,7 @@ module.exports = {
       '9/12': '75%',
       '10/12': '83.333333%',
       '11/12': '91.666667%',
-      full: '100%',
+      full: '100%'
     }),
     minHeight: (theme) => ({
       '0': '0',
@@ -476,7 +486,7 @@ module.exports = {
       '10/12': '83.333333%',
       '11/12': '91.666667%',
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     }),
     minWidth: (theme) => ({
       '0': '0',
@@ -507,7 +517,7 @@ module.exports = {
       '9/12': '75%',
       '10/12': '83.333333%',
       '11/12': '91.666667%',
-      full: '100%',
+      full: '100%'
     }),
     opacity: {
       '0': '0',
@@ -530,7 +540,7 @@ module.exports = {
       '85': '0.85',
       '90': '0.9',
       '95': '0.95',
-      '100': '1',
+      '100': '1'
     },
     padding: (theme) => theme('spacing'),
     textColor: (theme) => theme('colors'),
@@ -564,7 +574,7 @@ module.exports = {
       '10/12': '83.333333%',
       '11/12': '91.666667%',
       full: '100%',
-      screen: '100vw',
+      screen: '100vw'
     }),
     zIndex: {
       auto: 'auto',
@@ -578,7 +588,7 @@ module.exports = {
       '70': '70',
       '80': '80',
       '90': '90',
-      '100': '100',
-    },
-  },
-};
+      '100': '100'
+    }
+  }
+}

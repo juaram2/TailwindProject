@@ -1,4 +1,62 @@
 {
+	"shadow" : {
+		"shadowColor": "rgb(0, 0, 0)",
+		"shadowOffset": {"width": 0, "height": 1}, 
+		"shadowOpacity": 0.1,
+		"shadowRadius": 3,
+		"elevation": 1.5
+	},
+	"shadow-md"	: {
+		"shadowColor": "rgb(0, 0, 0)",
+		"shadowOffset": {"width": 0, "height": 4}, 
+		"shadowOpacity": 0.1,
+		"shadowRadius": 6, 
+		"elevation": 3
+	},
+	"shadow-lg"	: {
+		"shadowColor": "rgb(59, 67, 92)",
+		"shadowOffset": {
+			"width": 0,
+			"height": 10
+		},
+		"shadowOpacity": 0.2,
+		"shadowRadius": 10,
+		"elevation": 7.5
+	},
+	"shadow-xl"	: {
+		"shadowColor": "rgb(0, 0, 0)",
+		"shadowOffset": {"width": 0, "height": 20}, 
+		"shadowOpacity": 0.1,
+		"shadowRadius": 25, 
+		"elevation": 12.5
+	},
+	"shadow-2xl"	: {
+		"shadowColor": "rgb(0, 0, 0)",
+		"shadowOffset": {"width": 0, "height": 25}, 
+		"shadowOpacity": 0.25,
+		"shadowRadius": 50, 
+		"elevation": 25
+	},
+	"shadow-inner"	: {
+		"shadowColor": "rgb(0, 0, 0)",
+		"shadowOffset": {"width": 0, "height": 2}, 
+		"shadowOpacity": 0.06,
+		"shadowRadius": 4, 
+		"elevation": 2
+	},
+	"shadow-outline"	: {
+		"shadowColor": "rgb(66, 153, 225)",
+		"shadowOffset": {"width": 0, "height": 0}, 
+		"shadowOpacity": 0.5,
+		"shadowRadius": 0, 
+		"elevation": 0
+	},
+	"shadow-none"	: {
+		"shadowColor": "rgb(0, 0, 0)",
+		"shadowOffset": {"width": 0, "height": 0}, 
+		"shadowRadius": 0, 
+		"elevation": 0
+	},
 	"bg-transparent": {
 		"backgroundColor": "transparent"
 	},
@@ -1087,12 +1145,6 @@
 		"borderBottomWidth": 10,
 		"borderLeftWidth": 10
 	},
-	"border-11": {
-		"borderTopWidth": 11,
-		"borderRightWidth": 11,
-		"borderBottomWidth": 11,
-		"borderLeftWidth": 11
-	},
 	"border": {
 		"borderTopWidth": 1,
 		"borderRightWidth": 1,
@@ -1218,18 +1270,6 @@
 	},
 	"border-l-10": {
 		"borderLeftWidth": 10
-	},
-	"border-t-11": {
-		"borderTopWidth": 11
-	},
-	"border-r-11": {
-		"borderRightWidth": 11
-	},
-	"border-b-11": {
-		"borderBottomWidth": 11
-	},
-	"border-l-11": {
-		"borderLeftWidth": 11
 	},
 	"border-t": {
 		"borderTopWidth": 1
